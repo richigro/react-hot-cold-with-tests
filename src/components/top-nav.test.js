@@ -7,6 +7,7 @@ describe('<TopNav/>', () => {
     it('should contain three li elements', () => {
         const wrapper = shallow(<TopNav/>);
         // console.log(wrapper.debug());
-        expect(wrapper.contains('nav')).to.have.lengthOf(1);
+        // test to see if 3 li's are rendered
+        expect(wrapper.find('li').children().length).toEqual(3);
       });
 });
