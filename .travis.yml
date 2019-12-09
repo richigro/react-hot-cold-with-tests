@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: XQozjQdVGk/J54nrTtqIjcRPN0IiGB1MXBPpHYC9b9C5uUKDLvb/ApWy4G0bHuPCwXVYFR8ZCwI4bc8PP57e30cHk8R4pqoj7gQkdUlcT69i0tP4n42tTrzYf99TtVvZSOP2Kjq3eyRPvguRL8jWKpKvNlcUjOE+fKkYiZkzs0uIQpNpRo2aHcGeben98Qhd3lKwrU5zYIUk3HUpnWS6/jH/vjyPUy4vHImbXNVHO8Oa4NqJShgzvbeICQWHdxNBM1XGzKY0vy3pxulbes1JdpVzklznssYNgFsirLdCvIYJ90jc13qwXgN4l7qmeCFpRbIp0iEj8SknYy7tgEku/nb4jxjblGSthUzl+sRlnDVj7xFlJyjDLhv8AlzcV/TDW2yhD5TrlzD6Dv2pw5y2I2aIfnwtq+zqEj1PLzsADvdWlhQqUutVy4uGq/1G0fNsZud3fcSkO+rkTd9AFrEZeuGIKMJMuSVVZeRGkEluUr+iWsdprA0Y5rCtKVfx1FHTjXHoIuPnfYyrkIHxJvsNVEB3KqGovog+nHoPT6JSc4FVvtpvncEIENUunKpdgvOx5YjZW+aqmuG5bIF+ljp2s+ZU/aA9BMaXIBxSNz1N8Tt86SxtweVvYPgT9Q/ikCKOARis3TGc8dcpufdsdc/VIG/5+V8Muv9gJ0m5ChEovo0=
+  app: morning-temple-45360
+  on:
+    repo: richigro/react-hot-cold-with-tests
